@@ -69,6 +69,7 @@ text-decoration: none;}
 }
 .imgSfondo{
     background-image: url(/assets/bg-image.png);
+    background-size: cover;
     width: 96.80%;
     height: 150px;
     margin: 30px;

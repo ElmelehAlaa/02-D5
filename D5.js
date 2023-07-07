@@ -71,14 +71,12 @@ console.log(cars);
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
-const obj = {};
-cars.push(obj);
-for (i = 0; i < cars.length; i++) {
-  switch (cars[i]) {
-    case "active":
-      cars[i].trims.pop;
-  }
+const obj = cars.push({ brand: "Lamborghini", model: "Aventador", color: "red", trims: ["Titanium", "s", "ac"] });
+
+for (let i = 0; i < cars.length; i++) {
+  cars[i].trims.pop();
 }
+
 console.log(cars);
 
 /* ESERCIZIO 7
@@ -86,7 +84,8 @@ console.log(cars);
 */
 const justTrims = [];
 for (i = 0; i < cars.length; i++) {
-  cars[i].trims.push(justTrims);
+  let firstElement = cars[i].trims[0];
+  justTrims.push(firstElement);
 }
 console.log(justTrims);
 /* ESERCIZIO 8
